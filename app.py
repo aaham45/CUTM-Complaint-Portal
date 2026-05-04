@@ -9,6 +9,7 @@ from models import db, User, Complaint, ComplaintTracking, Feedback, Department,
 
 app = Flask(__name__)
 app.config.from_object(Config)
+app.config['DEBUG'] = True
 
 # Initialize extensions
 db.init_app(app)
